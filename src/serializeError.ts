@@ -37,7 +37,7 @@ const destroyCircular = (from, seen) => {
     return to
 }
 
-module.exports = value => {
+export default value => {
     if (typeof value === 'object') {
         return destroyCircular(value, [])
     }
