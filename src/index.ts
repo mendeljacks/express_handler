@@ -1,5 +1,6 @@
 import serializeError from './serializeError'
 
+/* Turns promise functions into express middleware */
 export const handler = promiseFn => {
     return async (req, res) => {
         try {
